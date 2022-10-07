@@ -1,4 +1,3 @@
-const list = document.querySelector('#app')
 
 
 export const initFilms = () => {
@@ -14,7 +13,6 @@ export const getFilms = async () => {
     const responseFilmToJson = await responsePromiseFilm.json();
     return responseFilmToJson;
   } catch (error) {
-    
     console.log(error)
   }
 }
