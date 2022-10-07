@@ -16,6 +16,7 @@ export const inputTime= async (myDuration)=>{
     if(myDuration >= film.duration ) {
         
         const listFilm = ` 
+            <h2> This is a movie you could watch in your spare time !!</h2>
             <div class="flex relative">
                 <img alt="harry potter poster" class="poster"
                 src=${film.poster}>
