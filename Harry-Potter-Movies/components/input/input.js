@@ -12,23 +12,34 @@ export const inputTime= async (myDuration)=>{
 
     app.innerHTML = "";
     films.forEach((film) => {
-        
+           
     if(myDuration >= film.duration ) {
         
         const listFilm = ` 
-            <h2> This is a movie you could watch in your spare time !!</h2>
-            <div class="flex relative">
-                <img alt="harry potter poster" class="poster"
-                src=${film.poster}>
-                <div>
-                <h1 class="title">${film.title}</h1>
-                <h2 class="director"> Direct by: ${film.director} || Total Duration: ${film.duration}</h2>
-                <p class="description">${film.description}</p>
-
-            </div>
+        <div class="container">
+                <h3 class="title">${film.date}</h3>
+                <div class="content">
+                <a href="https://www.wizardingworld.com/" alt="wizarding world web">
+                <div class="content-overlay"></div>
+                <img class="content-image"" alt="harry potter poster"
+                    src=${film.poster}>
+                <div class="content-details fadeIn-bottom">
+                    <h2 class="content-title"> ${film.title}</h2>
+                    <h3 class="content-text"> Direct by: ${film.director} || Total Duration: ${film.duration}</h2>
+                    <p class="content-text">${film.description}</p>
+                </div>
+                </a>
+                </div>
+                </div>
         `
+          
         app.innerHTML += listFilm; 
 
     } 
-         
-})} 
+     else {
+    const notTime= `
+     <h2> YOU DONT HAVE ENOUGH TIME !!</h2>
+        `
+      error.innerHTML = notTime;
+     }     
+})}

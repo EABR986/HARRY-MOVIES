@@ -1,33 +1,152 @@
+@font-face {
+  font-family: 'harry_pregular';
+  src: url('./Harry-Potter-Font/harryp__-webfont.woff2') format('woff2'),
+       url('./Harry-Potter-Font/harryp__-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+:root{
+  background-color: rgb(0, 0, 0);
+  color: antiquewhite;
+  font-family: 'harry_pregular' ;
+}
+ 
+
 #myInput {
-    
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-  }
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 15%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #111010;
+  margin-bottom: 12px;
+  border-radius: 20px;
+}
   
-  #myUL {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
+header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
   
-  #myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
+.
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+.main-title{
+  color: #f7f2f2;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+.container{
+  padding: 1em 0;
+  float: left;
+  width: 50%;
+}
+.errorContainer{
+  padding: 1em 0;
+  width: 50%;
+}
+
+.container .title{
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay{
+  opacity: 1;
+}
+.content-image{
+  width: 100%;
+}
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.content-details h2, h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.content-details p{
+  color: #fff;
+  font-size: 1em;
+}
+.fadeIn-bottom{
+  top: 80%;
+}
+.content-text{
+  font-family: serif;
+  font-size: 1rem;
+}
+@media screen and (max-width: 640px){
+  .content-text{
+   font-size: 0.5em;
   }
-  
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+@media screen and (min-width: 900px){
+  .content-text{
+    width: 33.33333%;
   }
-  
+}
