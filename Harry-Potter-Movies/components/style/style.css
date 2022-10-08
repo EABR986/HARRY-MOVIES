@@ -76,6 +76,7 @@ header{
 .content {
   position: relative;
   margin: 40px;
+  margin-bottom: 0;
   overflow: hidden;
 }
 .content .content-overlay {
@@ -91,13 +92,6 @@ header{
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
-}
-.content:hover .content-overlay {
-  opacity: 1;
-}
-
-.container button {
-  margin-top: 20px;
 }
 
 .content-image {
@@ -119,9 +113,15 @@ header{
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-.content:hover .content-details{
+.hide {
+  display: none;
+}
+.hover .content-details{
   top: 50%;
   left: 50%;
+  opacity: 1;
+}
+.hover .content-overlay {
   opacity: 1;
 }
 .content-details h2, h3{
@@ -142,6 +142,17 @@ header{
   font-family: serif;
   font-size: 1rem;
 }
+.responsive-buttons {
+  display: none;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.responsive-buttons button {
+  background: white;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
 @media screen and (max-width: 640px){
 
   .container {
@@ -149,6 +160,9 @@ header{
   }
   .content-text{
    font-size: 0.5em;
+  }
+  .responsive-buttons {
+    display: block;
   }
 }
 @media screen and (min-width: 760px){
