@@ -11,6 +11,10 @@
   background-color: rgb(0, 0, 0);
   color: white;
   font-family: 'harry_pregular' ;
+  background-image: url("https://guiagame.com/wp-content/uploads/2022/07/Is-Harry-Potter-In-Hogwarts-Legacy.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; 
 }
  
 
@@ -33,6 +37,7 @@ header{
   justify-content: space-between;
   align-items: center;
   margin-top: 0.9375rem;
+  
 }
   
 #app {
@@ -40,6 +45,7 @@ header{
   flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
+ 
 }
 
 *, *:before, *:after{
@@ -163,3 +169,5 @@ header{
    font-size: 0.5em;
   }
 }
+
+
