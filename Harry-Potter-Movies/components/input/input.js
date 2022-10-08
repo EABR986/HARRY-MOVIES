@@ -20,14 +20,14 @@ export const inputTime= async (myDuration)=>{
             const filmItem = document.createElement("div");
             filmItem.innerHTML = ` 
                 <div class="container">
-                    <h3 class="title">${film.date}</h3>
+                    <h3 class="title">${film.title}</h3>
                     <div class="content">
                         <a href="https://www.wizardingworld.com/" alt="wizarding world web">
                             <div class="content-overlay"></div>
                             <img class="content-image"" alt="harry potter poster"
                                 src=${film.poster}>
                             <div class="content-details fadeIn-bottom">
-                                <h2 class="content-title"> ${film.title}</h2>
+                                <h2 class="content-title"> Release Date:${film.date} </h2>
                                 <h3 class="content-text"> Direct by: ${film.director} || Total Duration: ${film.duration}</h2>
                                 <p class="content-text">${film.description}</p>
                             </div>
