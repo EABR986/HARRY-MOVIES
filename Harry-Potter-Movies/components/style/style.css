@@ -185,34 +185,34 @@ header{
 }
 
 #html, body {
-margin:0;
-padding:0;
-height:100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 #pagina {
-position: relative;
-min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 #contenido {
-padding-bottom:50px; 
+  padding-bottom:50px; 
 }
 #footer {
-position:absolute;
-bottom:0;
-width: 100%;
-background:rgb(35, 34, 34);
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  background:rgb(35, 34, 34);
 
 }
 #pie {
-background:rgb(35, 34, 34);
-height:50px;
-line-height:50px;
-color:white;
-text-align:center;
-width:100%;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 18px;
-margin-top: 500px;
-vertical-align: text-bottom;
+  background:rgb(35, 34, 34);
+  height: 50px;
+  line-height: 50px;
+  color:white;
+  text-align:center;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  margin-top: 500px;
+  vertical-align: text-bottom;
 }
 
