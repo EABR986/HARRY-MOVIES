@@ -184,4 +184,31 @@ header{
   }
 }
 
+#html, body {
+margin:0;
+padding:0;
+height:100%;
+}
+#pagina {
+position: relative;
+min-height: 100%;
+}
+#contenido {
+padding-bottom:50px; 
+}
+#footer {
+position:absolute;
+bottom:0;
+width: 100%;
+background:rgb(35, 34, 34);
+}
+#pie {
+height:50px;
+line-height:50px;
+color:white;
+text-align:center;
+width:100%;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 18px;
+}
 
