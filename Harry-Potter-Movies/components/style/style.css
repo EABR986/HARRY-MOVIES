@@ -15,6 +15,7 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; 
+  height: 100%;
 }
  
 
@@ -37,6 +38,7 @@ header{
   justify-content: space-between;
   align-items: center;
   margin-top: 0.9375rem;
+  padding-bottom: 30px;
   
 }
   
@@ -60,6 +62,7 @@ header{
   text-align: center;
   text-transform: capitalize;
   padding: 0.7em 0;
+  font-size: 5rem;
 }
 /* .container {
   flex: 50%;
@@ -141,6 +144,7 @@ header{
 .content-text{
   font-family: serif;
   font-size: 1rem;
+  padding-bottom: 1rem;
 }
 .responsive-buttons {
   display: none;
@@ -153,7 +157,7 @@ header{
   padding: 5px;
   border-radius: 3px;
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 700px){
 
   .container {
     flex: 100%;
@@ -212,7 +216,41 @@ header{
   width: 100%;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18px;
+  /*creo que esto deberia quitarse*/
   margin-top: 500px;
   vertical-align: text-bottom;
 }
+/* cambios edu*/
 
+/* .house-picker {
+  height: 80px;
+  width: 80px;
+  border-radius: 30px
+ 
+}
+.house-selector{
+  padding-left: 57px;
+  padding-bottom: 1.5rem;
+  font-size: 30px;
+}*/
+
+.not-enough-time{
+  font-size: 40px;
+}
+
+.h2-title{
+  color: #f7f2f2;
+text-align: center;
+text-transform: capitalize;
+padding: 0.7em 0;
+font-size: 45px;
+} 
+
+.content-title{
+  font-size: 30px;
+  padding-bottom: 4px;
+}
+
+.title{
+  font-size: 27px;
+}

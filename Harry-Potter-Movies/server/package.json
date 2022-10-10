@@ -1,0 +1,15 @@
+{
+  "name": "harry-potter-movie",
+  "version": "0.0.0",
+  "description": "this is a Harry Potter movies base web proyect",
+  "main": "server.js",
+  "scripts": {
+    "start": "json-server --watch data.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
